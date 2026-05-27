@@ -2,8 +2,177 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* sm	40rem (640px)	@media (width >= 40rem) { ... } */
+/* md	48rem (768px)	@media (width >= 48rem) { ... } */
+/* lg	64rem (1024px)	@media (width >= 64rem) { ... } */
+/* xl	80rem (1280px)	@media (width >= 80rem) { ... } */
+/* 2xl	96rem (1536px)	@media (width >= 96rem) { ... } */
+
+/* amarelo - #E9B60B */
+/* azul escuro - #273270 */
+/* azul claro - #536EB3 */
+
+@layer base {
+    * {
+        @apply font-montserrat m-0 p-0 box-border border-[0px] border-red-500
+    }
+
+    html {
+        @apply scroll-smooth
+    }
+
+    header {
+        @apply w-full py-2 border-b-[0px] border-neutral-200 absolute top-0 z-30
+    }
+
+    main {
+        @apply min-h-dvh
+    }
+
+    section {
+        @apply w-full flex flex-col min-h-[500px] py-20 justify-between relative overflow-hidden
+    }
+
+    section > div {
+        @apply grid gap-4 mx-auto
+        w-5/6 lg:w-11/12 xl:w-3/4
+        lg:grid-cols-2
+    }
+
+    span {
+        @apply flex
+    }
+
+    figure, picture {
+        @apply flex
+    }
+
+    h1 {
+        @apply font-medium leading-tight mb-4
+        text-2xl xl:text-4xl
+    }
+
+    h2 {
+        @apply text-3xl
+    }
+
+    h3 {
+        @apply text-xl font-bold 
+    }
+
+    h4 {
+        @apply text-sm
+    }
+
+    h5 {
+        @apply text-xs
+    }
+
+    p, li {
+        @apply text-neutral-500 text-sm z-10
+    }
+
+    strong {
+        @apply font-extrabold z-10
+    }
+
+    p, ul {
+        @apply mt-4 mb-0
+    }
+
+    li {
+        @apply flex items-center gap-2
+    }
+
+    a {
+        @apply cursor-pointer
+    }
+
+    input, textarea {
+        @apply outline-0 font-light p-3 rounded
+    }
+
+    table {
+        @apply mb-8 last:mb-0
+    }
+}
+
+@layer components {
+    .checklist-icon {
+        @apply text-[#E9B60B] text-2xl
+    }
+}
+
+@layer utilities {
+    #circulo-colorido-menor {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        transform: rotate(180deg);
+    
+        mask: radial-gradient(circle,
+            transparent 50%,
+            black 36%
+        );
+    
+        -webkit-mask: radial-gradient(circle,
+            transparent 50%,
+            black 36%
+        );
+    }
+
+    #circulo-colorido-maior {
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+    
+        mask: radial-gradient(circle,
+            transparent 60%,
+            black 36%
+        );
+    
+        -webkit-mask: radial-gradient(circle,
+            transparent 60%,
+            black 36%
+        );
+    }
+
+    #circulo-tracado-menor {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+    }
+
+    /* icones */
+    .tabler--check {
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m5 12l5 5L20 7'/%3E%3C/svg%3E");
+        background-color: currentColor;
+        -webkit-mask-image: var(--svg);
+        mask-image: var(--svg);
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-size: 100% 100%;
+        mask-size: 100% 100%;
+    }
+
+    .tabler--mood-sad-dizzy {
+        display: inline-block;
+        color: #E51C27;
+        font-size: 2em;
+        width: 1em;
+        height: 1em;
+        --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none' stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'%3E%3Cpath d='M3 12a9 9 0 1 0 18 0a9 9 0 1 0-18 0'/%3E%3Cpath d='M14.5 16.05a3.5 3.5 0 0 0-5 0M8 9l2 2m0-2l-2 2m6-2l2 2m0-2l-2 2'/%3E%3C/g%3E%3C/svg%3E");
+        background-color: currentColor;
+        -webkit-mask-image: var(--svg);
+        mask-image: var(--svg);
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-size: 100% 100%;
+        mask-size: 100% 100%;
+    }
+
+
 }

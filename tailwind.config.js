@@ -5,7 +5,15 @@ module.exports = {
         "./index.html",
     ],
     theme: {
-        extend: {},
+        extend: {
+            backgroundImage: {
+                'colorido': "url('/src/img/bg-colorido.png')",
+                'tracado': "url('/src/img/bg-tracado.png')",
+            },
+        },
+        fontFamily: {
+            'montserrat': ['Montserrat', 'sans-serif']
+        }
     },
     plugins: [],
 }

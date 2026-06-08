@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack --mode=production --config-node-env=production",
     "build:dev": "webpack --mode=development",
-    "serve": "webpack serve",
+    "serve": "webpack serve --host 0.0.0.0",
     "watch": "webpack --watch"
   },
   "devDependencies": {

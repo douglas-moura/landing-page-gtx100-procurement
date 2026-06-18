@@ -1,3 +1,5 @@
+![GTX100 Procurement](./src/img/preview.png)
+
 # GTX100 Procurement Landing Page
 
 Landing page institucional desenvolvida para apresentar as soluções de Procurement da GTX100.
@@ -127,16 +129,6 @@ Demonstrar como a GTX100 ajuda empresas a transformar seus processos de compras 
 - Menor custo total
 - Maior controle
 - Melhores decisões
-
----
-
-## 👨‍💻 Autor
-
-**Douglas Moura**
-
-- GitHub: https://github.com/douglas-moura
-- LinkedIn: https://www.linkedin.com/in/douglasmoura
-- Portfolio: https://douglasmoura.dev
 
 ---
 
